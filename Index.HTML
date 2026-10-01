@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICTIweb-Gourmet Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Navigation Bar--> 
+    <header>
+        <nav class="navbar">
+            <div class="logo">ICTI<span>web</span></div>
+            <Ul class="nav-links">
+                <li><a href="#menu">Our Menu</a> </li>
+                <li><a href="#Calculator">Order Estimator</a> </li>
+                <li><a href="#contact">Book Table</a> </li>
+            </Ul>
+            <button id="theme-toggle" class="btn-toggle"> Toggle Mode</button>
+            </nav>
+        </header>
+
+        <!--Hero Section--> 
+            <Section class="hero">
+                <div class="hero-content">
+                    <h1> Exquisite Dining. Memorable Moments.</h1>
+                    <p> Welcome to ICTIweb, where culinary artistry meets premium local hospitality</p>
+                    <a href="#calculator" class="cta-btn">Estimate Order Cost</a>
+                </div>
+            </Section>
+
+            <!--Menu Highlights section-->
+            <section id="menu" class="features-section">
+                <h2>Chefs Recommendations</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3> Prime Ribeye Steak</h3>
+                        <p>Perfectly aged beef seared with garlic butter, rosemaryand served with truffle fries</p>
+                </div>
+                <div class="feature-card">
+                    <h3> Artisanal Truffle Pasta</h3>
+                    <p>Handcrafted fettuccine tossted in a rich, velvety wild mushroom and black truffle cream sauce.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Decadent Lava Cake</h3>
+                    <p>Warm, liquid chocolate center cake paired with a scoop of premium Madagascar vanilla bean ice cream.</p>
+                </div>
+                </div>
+                </section>
+
+                <!--JavaScript Interactive Component: Catering/Order Calculation-->
+                <section id="calculator" class="calc-section">
+                    <h2>Interactive Group Order Estimator</h2>
+                    <p> Adjust the slider to choose your guest count and calculate an estimated package cost instantly</p>
+            <div class="calc-box">
+                <label for="guest-slider">Number of Guests: <span id="user-count">15</span> </label>
+                <input type="range" id="guest-slider" min="1" max="100" value="15">
+                <div class="total-price">Estimated Total: $<span id="total-cost">450</span> </div>
+             </div>
+                </section>
+
+        <!--Javascript Interactive Component: Reservation Validation Form-->
+        <section id="contact" class="contact-section">
+            <h2>Reserve Your Table</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name-input" placeholder="Your Full Name"required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email-input" placeholder="Your Email Address"required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Reservation</button>
+                <p id="form-feedback" class="feedback-msg"></p>
+            </form>
+        </section>
+
+        <footer>
+            <p>& copy; 2026 ICTIweb Restaurant Project. Built by Impressive Incorporated G. Manager.</p>
+        </footer>
+        <script src="script.js"></script>
+
+</body>
+
+</HTML>
